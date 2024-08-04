@@ -52,7 +52,7 @@ Use this code to make your Anime card
 ```
 ## Authors
 
-- [@saswat](https://www.linkedin.com/in/saswat-k-sahoo/)
+- [@saswattt](https://www.linkedin.com/in/saswat-k-sahoo/)
 
 
 ## Tech Stack
