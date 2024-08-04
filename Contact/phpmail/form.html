@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<header>
+  <div class="logo">
+    <img src="../../images/saswat-removebg-preview.png" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../services.html">How to Contribute ?</a></li>
+      <li><a href="../../Contact/phpmail/form.html">Contact</a></li>
+      <li><a href="../../About/about.html">About Us</a></li>
+    </ul>
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content">
+        <a href="../../index.html">Home</a>
+        <a href="../../services.html">How to Contribute ?</a>
+        <a href="../../Contact/phpmail/form.html">Contact</a>
+        <a href="../../About/about.html">About Us</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <h1 class="saswat">Contact</h1>
+
+  <form method="post" autocomplete="off" name="google-sheet">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" pattern="[A-Za-z]{1,32}" required placeholder="Your name..">
+    <label for="lname">Email</label>
+    <input type="email" name="email" required placeholder="Your email..">
+
+    <label for="message">Message</label>
+    <textarea name="message" required placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzo8k4G50mL-2NNZhqEryJPfhToRlQb2b3X9JRFHgAf6-6k2RpRKgiM3ymGhuGeGrI5/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+<footer>
+  <div class="f-container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <p class="para">&copy; 2024 Yuki. All Rights Are Reserved.</p>
+      </div>
+      <div class="footer-col">
+        <ul class="social-icons">
+          <li><a href="https://github.com/Saswattt?tab=repositories"><img src="../../icons/icons8-github-48.png"
+                alt=""></a></li>
+          <li><a href="https://www.instagram.com/saswatlifts?igsh=N2hhanhseGhjZ3l5"><img src="../../icons/icons8-instagram-48.png"
+                alt=""></a></li>
+          <li><a href="https://www.linkedin.com/in/saswat-k-sahoo/"><img
+                src="../../icons/icons8-linkedin-48.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

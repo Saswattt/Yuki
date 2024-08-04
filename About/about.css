@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(
+    72deg,
+    rgb(44, 222, 242) 0%,
+    rgb(156, 43, 171) 35%,
+    rgb(39, 43, 44) 100%
+  );
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: #fff;
+}
+
+.logo img {
+  width: 190px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: fantasy;
+}
+
+.dropdown {
+  margin-right: 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: #00808f;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  margin-left: -130px;
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-family: fantasy;
+}
+a:hover {
+  color: cyan;
+  letter-spacing: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 10px;
+    text-align: left;
+    padding: 0;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+.about-header {
+  text-align: center;
+  font-size: 60px;
+  font-family: fantasy;
+  background: -webkit-linear-gradient(#e600ff, #0234ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.about-img {
+  width: 80vw;
+  height: 60vh;
+}
+
+.right {
+  /* position: relative; */
+  margin-right: 5px;
+  width: 50%;
+}
+
+.anime-video {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  border: 2px solid red;
+  box-shadow: -10px -15px 5px rgb(5, 5, 5);
+}
+
+.left {
+  font-size: 25px;
+  width: 50rem;
+  text-align: center;
+  margin-right: 5px;
+}
+.about-para {
+  /* width: 60%; */
+  text-align: left;
+  line-height: 35px;
+  height: 60vh;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+p {
+  margin-top: 50px;
+}
+
+.para-1,
+.para-2,
+.para-3 {
+  margin-bottom: 20px;
+  /* border-left: 5px solid rgb(46, 195, 200); */
+}
+
+.sp-1 {
+  font-family: "Bruno Ace SC", cursive;
+  text-decoration: underline wavy;
+  text-decoration-color: rgb(45, 203, 221);
+  color: rgb(231, 191, 16);
+  /* margin-left: 30px; */
+}
+.sp-main {
+  margin-left: 50px;
+}
+p {
+  font-weight: 500;
+}
+.img-gif {
+  width: 50px;
+  height: 50px;
+}
