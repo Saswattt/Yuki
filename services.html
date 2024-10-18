@@ -10,34 +10,106 @@
   <title>Yuki</title>
   <style>
     body {
-      background-color: rgb(255, 4, 4);
+      background-color: #121212; /* Dark background */
+      color: white; /* Default text color */
+      font-family: 'Arial', sans-serif; /* Uniform font family */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #1e1e1e; /* Dark header background */
+    }
+
+    .logo img {
+      width: 190px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px; /* Adjusted font size for consistency */
+      transition: color 0.3s ease; /* Normal hover effect */
+    }
+
+    nav ul li a:hover {
+      color: #00ffcc; /* Hover color */
     }
 
     .ti {
       text-align: center;
       font-size: 60px;
-      font-family: fantasy;
+      font-family: 'fantasy';
       background: -webkit-linear-gradient(#b9ff08, #0234ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 50px;
+      margin: 50px 0; /* Margin for spacing */
     }
 
-    .qq {
+    ul {
+      list-style-type: disc; /* Dot bullet points */
+      padding: 0 20px; /* Padding for list */
+      text-align: center; /* Center align list items */
+    }
+
+    li {
+      font-size: 24px; /* Font size for list items */
+      margin: 10px 0; /* Spacing between list items */
+      font-family: monospace; /* Font family for list items */
+    }
+
+    footer {
+      background-color: #1e1e1e; /* Dark footer background */
+      padding: 20px 0; /* Padding for footer */
+      text-align: center; /* Center align footer content */
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white; /* Footer text color */
+      padding: 0 20px; /* Padding for footer content */
+    }
+
+    .social-icons {
       list-style: none;
-      font-size: 30px;
-      text-align: center;
-      margin: 20px;
-      font-family: monospace;
+      display: flex;
+      justify-content: center; /* Center align social icons */
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+    }
+
+    .social-icons li {
+      margin: 0 10px; /* Margin between social icons */
+    }
+
+    .social-icons img {
+      width: 40px; /* Size for social icons */
+      height: 40px; /* Ensure consistency */
     }
   </style>
-
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <img src="images/saswat-removebg-preview.png" alt="Logo">
+      <img src="images/yuki.png" alt="Logo">
     </div>
     <nav>
       <ul>
@@ -57,34 +129,36 @@
       </div>
     </nav>
   </header>
+
   <h1 class="ti">How to Contribute ?</h1>
   <ul>
-    <li class="qq">Select any anime Character of your choice.</li>
-    <li class="qq">Get a nice rectangle photo of your Character in png format.</li>
-    <li class="qq">Generate a 20 word description of your Character.</li>
-    <li class="qq">Use the given html card template in GitHub to finish your work.</li>
-    <li class="qq">create a pull request.</li>
-    <li class="qq">Wait till it gets merged.</li>
+    <li>Select any anime character of your choice.</li>
+    <li>Get a nice rectangle photo of your character in PNG format.</li>
+    <li>Generate a 20-word description of your character.</li>
+    <li>Use the given HTML card template in GitHub to finish your work.</li>
+    <li>Create a pull request.</li>
+    <li>Wait till it gets merged.</li>
   </ul>
-</body>
-<footer>
-  <div class="f-container">
-    <div class="footer-content">
-      <div class="footer-col">
-        <p class="para">&copy; 2024 Yuki. All Rights Are Reserved.</p>
-      </div>
-      <div class="footer-col">
-        <ul class="social-icons">
-          <li><a href="https://github.com/Saswattt?tab=repositories"><img src="icons/icons8-github-48.png"
-                alt=""></a></li>
-          <li><a href="https://www.instagram.com/saswatlifts?igsh=N2hhanhseGhjZ3l5"><img src="icons/icons8-instagram-48.png" alt=""></a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/saswat-k-sahoo/"><img
-                src="icons/icons8-linkedin-48.png" alt=""></a></li>
-        </ul>
+
+  <footer>
+    <div class="f-container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <p class="para">&copy; 2024 Yuki. All Rights Are Reserved.</p>
+        </div>
+        <div class="footer-col">
+          <ul class="social-icons">
+            <li><a href="https://github.com/Saswattt?tab=repositories"><img src="icons/icons8-github-48.png"
+                  alt="GitHub"></a></li>
+            <li><a href="https://www.instagram.com/saswatlifts?igsh=N2hhanhseGhjZ3l5"><img src="icons/icons8-instagram-48.png"
+                  alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/saswat-k-sahoo/"><img
+                  src="icons/icons8-linkedin-48.png" alt="LinkedIn"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</body>
 
 </html>
