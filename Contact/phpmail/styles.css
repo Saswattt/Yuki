@@ -1,46 +1,152 @@
+body {
+  background: linear-gradient(72deg, #000000 0%, #1a1a1a 35%, #2a2a2a 100%);
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff; /* Default text color to white for contrast */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for header */
+}
+
+.logo img {
+  width: 190px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif; /* Replace 'YourFontName' with the actual font family used in the homepage */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ffcc; /* Hover color */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: #00808f;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.saswat {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(#e600ff, #0234ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
 form {
-    margin: 20px auto;
-    max-width: 500px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-.saswat{
-            text-align: center;
-            font-size: 60px;
-            font-family: fantasy;
-            background: -webkit-linear-gradient(#e600ff, #0234ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 50px;
-}  
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for dark vibe */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2); /* Dark input field */
+  color: white; /* Input text color */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for footer */
+  color: #fff;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
